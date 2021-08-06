@@ -1,0 +1,110 @@
+const ld = 6
+const lds = 360 / ld
+function setup() {
+  createCanvas(530, 530);
+  angleMode(DEGREES)
+  rectMode(CENTER)
+}
+function draw() {
+background("#ff9ff3");
+//Back Circles
+push()
+translate(width/2, height/2)
+strokeWeight(3);
+ellipse(0, 0, 467, 467)
+  
+ellipse(0, 0, 452, 452)
+   
+pop() 
+
+ //Last Circle
+    push()
+    translate(width/2, height/2)
+    strokeWeight(3);
+    
+ push() 
+  fill('black')
+  ellipse(0, 0, 11, 11)
+  pop()
+  ellipse(0, 0, 8, 8)
+    
+    
+    for (let i = 0; i < ld; i++) {
+    
+      //flower
+      push()
+      noFill();
+      ellipse(14.5, 25, 51, 51)
+      
+      pop()
+      
+      //pokeball
+      push()
+      noFill();
+      ellipse(0, 80, 60, 60)
+      
+      pop()
+      
+      //Bigball
+      push()
+      noFill();
+      ellipse(0, 115, 100, 100)
+      
+      pop()
+      
+      //insidepokeball
+      push()
+      noFill();
+      ellipse(0, 81, 30, 30)
+      
+      pop()
+      
+      //sideOfBigball
+      push()
+      noFill();
+      ellipse(58, 100, 50, 50)
+      
+      pop()
+      
+      //Leaves
+      push()
+      noFill();
+      ellipse(56, 172, 33, 93)
+      ellipse(-56, 172, 33, 93)
+      pop()
+      
+     //smolBalls
+      push()
+      noFill();
+      ellipse(0, 180, 30, 30)
+      ellipse(25, 205, 30, 30)
+      ellipse(-25, 205, 30, 30)
+      pop()
+      
+      //smolestBalls
+      push()
+      noFill();
+      ellipse(0, 216, 17, 17)
+      ellipse(25, 180, 17, 17)
+      ellipse(-25, 180, 17, 17)
+     
+      pop()
+      
+       //smolBalls#2
+      push()
+      noFill();
+      ellipse(89, 189, 33, 33)
+      ellipse(-89, 189, 33, 33)
+      ellipse(89, 155, 33, 33)
+      ellipse(76, 132, 20, 20)
+    
+      pop()
+
+    rotate(lds)
+    }
+    
+    
+   
+    pop()
+
+}
